@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Desafio S2IT">
+	<meta name="keywords" content="desafio, S2IT">
+	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>		
+		<section class="arena">
+			<div class="player-1">
+				<p>Jogador 01</p>
+				<p>Vida: <span id="vida1">100</span>%</p>
+				<progress id="progress-one" value="100" max="100"></progress>
+				<button onclick="Desafio.ataqueJogadorUm()" class="botao-ataque">Atacar</button>
+			</div>
+			<div class="player-2">
+				<p>Jogador 02</p>
+				<p>Vida: <span id="vida2">100</span>%</p>
+				<progress id="progress-two" value="100" max="100"></progress>
+				<button onclick="Desafio.ataqueJogadorDois()" class="botao-ataque">Atacar</button>
+			</div>			
+		</section>
+		<button onclick="Desafio.reiniciar()" class="botao-reiniciar">Reiniciar</button>
+		<div id="mensagemView" style="visibility: hidden;"><p id="mensagem"></p></div>
+	</main>
+
+<script src="js/controller/GameController.js"></script>
+<script src="js/view/View.js"></script>
+<script src="js/model/Ataque.js"></script>
+
+<script>
+	let Desafio = new GameController();
+</script>
+</body>
+</html>
