@@ -123,8 +123,8 @@ progress::-moz-progress-bar {
 		display: flex;
 	}
 	.botao-reiniciar{
-		bottom: 0;
-		left: 45%;	    
+		bottom: 35px;
+		left: 44%;	    
 	}
 	#mensagemView p{
 		margin: 0 30%; 
